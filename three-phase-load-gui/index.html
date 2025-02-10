@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3-Phase Load Visualization</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body >
+    <h2 >INDIAN INSTITUTE OF INFORMATION TECHNOLOGY VADODARA INTERNATIONAL CAMPUS DIU</h2>
+
+    <h6>BASIC ELECTRICAL ENGINEERING </h6>
+
+    <h4>3-Phase Current,Voltage and Power Visualization</h4>
+    <label>Red Phase R: <input id="R_red" type="number" placeholder="Enter value"></label>
+    <label>Red Phase L: <input id="L_red" type="number" placeholder="Enter value">></label>
+    <label>Red Phase C: <input id="C_red" type="number" placeholder="Enter value">></label>
+    
+    <label>Blue Phase R: <input id="R_blue" type="number" placeholder="Enter value">></label>
+    <label>Blue Phase L: <input id="L_blue" type="number" placeholder="Enter value">></label>
+    <label>Blue Phase C: <input id="C_blue" type="number" placeholder="Enter value">></label>
+    
+    <label>Green Phase R: <input id="R_green" type="number" placeholder="Enter value">></label>
+    <label>Green Phase L: <input id="L_green" type="number" placeholder="Enter value">></label>
+    <label>Green Phase C: <input id="C_green" type="number" placeholder="Enter value">></label>
+    
+    <label>Omega: <input id="omega" type="number"></label>
+    <button onclick="sendData()">Calculate</button>
+    <div id="impedanceResults"></div>
+
+    <canvas id="voltageChart"></canvas>
+    <canvas id="currentChart"></canvas>
+    <canvas id="powerChart"></canvas>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+
+
+
+</body>
+</html>
